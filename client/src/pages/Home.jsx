@@ -19,7 +19,7 @@ export default function Home() {
       let response;
       if (file.type === "application/pdf") {
         response = await axios.post(
-          "http://localhost:8080/api/user/upload",
+          "https://resume-extractor-l7e9.onrender.com/api/user/upload",
           formData
         );
       } else if (
