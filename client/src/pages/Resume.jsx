@@ -7,7 +7,7 @@ function Resume() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/user/getResume"
+          "https://resume-extractor-l7e9.onrender.com/api/user/getResume"
         );
         setData(response.data);
       } catch (e) {
